@@ -1,1 +1,105 @@
-<!DOCTYPE html><html><head><title>OSM</title></head><body><h1>Site prêt</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Original Scores Music - OSM</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.8);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      background-color: rgba(0,0,0,0.7);
+      margin-top: 40px;
+    }
+    h2 {
+      text-align: center;
+      color: #ffcc00;
+    }
+    .playlist {
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    .track {
+      background: #222;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+    audio {
+      width: 100%;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>OSM</strong></div>
+    <nav>
+      <a href="#playlists">Playlists</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="playlists">
+    <h2>🎧 Playlists par ambiance</h2>
+
+    <div class="playlist">
+      <h3>Action / Combat</h3>
+      <div class="track">
+        <div>Tension Track</div>
+        <audio controls>
+          <source src="https://drive.google.com/uc?export=download&id=1ABCD1234XYZ" type="audio/mp3">
+          Votre navigateur ne supporte pas l'audio HTML.
+        </audio>
+      </div>
+    </div>
+
+    <div class="playlist">
+      <h3>Folk Acoustique</h3>
+      <div class="track">
+        <div>Calm Guitar Loop</div>
+        <audio controls>
+          <source src="https://drive.google.com/uc?export=download&id=1XYZABCD5678" type="audio/mp3">
+          Votre navigateur ne supporte pas l'audio HTML.
+        </audio>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Demande de brief personnalisé</h2>
+    <form action="mailto:vladimirstreiff@gmail.com" method="post" enctype="text/plain" style="max-width: 500px; margin:auto;">
+      <input type="text" name="Nom" placeholder="Votre nom" required style="width:100%;padding:10px;margin:5px 0;">
+      <input type="email" name="Email" placeholder="Votre email" required style="width:100%;padding:10px;margin:5px 0;">
+      <textarea name="Message" placeholder="Décrivez votre besoin..." rows="5" required style="width:100%;padding:10px;margin:5px 0;"></textarea>
+      <input type="submit" value="Envoyer" style="background:#ffcc00;color:black;padding:10px;width:100%;border:none;">
+    </form>
+  </section>
+</body>
+</html>
